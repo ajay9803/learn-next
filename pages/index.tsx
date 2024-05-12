@@ -1,47 +1,31 @@
-import Link from "next/link";
+import Head from "next/head";
+import Script from "next/script";
 import { Fragment } from "react";
-import MeetupList from "../components/meetups/MeetupList";
 
-const HomePage = () => {
-  const dummyMeetups = [
-    {
-      id: "1",
-      title: "dummy1",
-      image:
-        "https://cdn.britannica.com/05/58605-050-86F58113/Annapurna-massif-village-Nepal.jpg",
-      address: "dummy location",
-      description: "this is 1 meetup",
-    },
-    {
-      id: "2",
-      title: "dummy2",
-      image:
-        "https://cdn.britannica.com/05/58605-050-86F58113/Annapurna-massif-village-Nepal.jpg",
-      address: "dummy location",
-      description: "this is 1 meetup",
-    },
-    {
-      id: "3",
-      title: "dummy3",
-      image:
-        "https://cdn.britannica.com/05/58605-050-86F58113/Annapurna-massif-village-Nepal.jpg",
-      address: "dummy location",
-      description: "this is 1 meetup",
-    },
-    {
-      id: "4",
-      title: "dummy4",
-      image:
-        "https://cdn.britannica.com/05/58605-050-86F58113/Annapurna-massif-village-Nepal.jpg",
-      address: "dummy location",
-      description: "this is 1 meetup",
-    },
-  ];
+
+const HomePage = (props: any) => {
+
   return (
     <Fragment>
-      <MeetupList meetups={dummyMeetups}></MeetupList>
+
+      {/* set up headers */}
+      <Head>
+        <title> Blog App </title>
+        <meta name="description" content="this is description."></meta>
+      </Head>
+
+      {/* set up scripts outside head */}
+      <Script id="1" strategy="lazyOnload">
+        {/* alert('Hello world'); */}
+      </Script>
+      <p> Home Page</p>
+      <div className="blogItem">
+
+      </div>
     </Fragment>
   );
-};
+}; 
+
+
 
 export default HomePage;
