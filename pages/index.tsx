@@ -1,3 +1,4 @@
+import NavBar from "@/components/nav_bar";
 import Head from "next/head";
 import Script from "next/script";
 import { Fragment } from "react";
@@ -18,14 +19,8 @@ const HomePage = (props: any) => {
       <Script id="1" strategy="lazyOnload">
         {/* alert('Hello world'); */}
       </Script>
-      <p> Home Page</p>
-      <div className="blogItem">
-
-      </div>
     </Fragment>
   );
-}; 
+};
 
-
-
-export default HomePage;
+export default HomePage;        
