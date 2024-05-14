@@ -2,13 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @import url("../styles/fonts.css"); */
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Open Sans", "Lato", sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   margin: 0;
 }
 

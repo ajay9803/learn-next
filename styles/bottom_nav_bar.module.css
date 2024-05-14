@@ -1,0 +1,38 @@
+.pokemonBall {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background-color: red;
+  border-radius: 40px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in;
+  cursor: pointer;
+}
+
+.pokemonBall:hover {
+  transform: rotate(360deg);
+}
+
+.pokemonBall::after {
+  content: "";
+  position: absolute;
+  top: 15.5px;
+  height: 47px;
+  width: 47px;
+  border-radius: 47px;
+  background-color: red;
+  border: 2px solid white;
+}
+
+.pokemonBall::before {
+  z-index: 1;
+  position: absolute;
+  top: 28%;
+  left: 40%;
+  content: "";
+  height: 9px;
+  width: 9px;
+  border-radius: 9px;
+  border: 2px solid white;
+  background-color: red;
+}
