@@ -1,0 +1,41 @@
+/* oval shaped  */
+
+.ovalContainer {
+  height: 100px;
+  width: 200px;
+  border-radius: 100px / 50px;
+  background-color: red;
+}
+
+.pokemonBall {
+  position: relative;
+  height: 45px;
+  width: 45px;
+  background-color: white;
+  border-radius: 45px;
+  overflow: hidden;
+}
+
+.pokemonBall::after {
+  content: "";
+  position: absolute;
+  top: 15.5px;
+  height: 47px;
+  width: 47px;
+  border-radius: 47px;
+  background-color: white;
+  border: 2px solid red;
+}
+
+.pokemonBall::before {
+  z-index: 1;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  content: "";
+  height: 9px;
+  width: 9px;
+  border-radius: 9px;
+  border: 2px solid red;
+  background-color: white;
+}
